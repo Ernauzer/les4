@@ -20,14 +20,14 @@
         else if (userAge <= 0) {
            alert("Неверный возраст");
         }
+        else if (userAge % 100 >= 5 || userAge % 100 >= 20) {
+            alert("Ваш возраст " + userAge + " лет");
+        }
         else if (userAge >= 10 && userAge <= 20) {
             alert("Ваш возраст " + userAge + " лет")
         }
         else if (userAge % 10 >= 2 && userAge % 10 <= 4) {
           alert("Ваш возраст " + userAge + " года");
-        }
-        else if (userAge % 100 >= 5 || userAge % 100 >= 20) {
-            alert("Ваш возраст " + userAge + " лет");
         }
        
     </script>
