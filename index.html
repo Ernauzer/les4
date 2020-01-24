@@ -10,25 +10,22 @@
     
     <script>
      
-     var userAge = +prompt("Сколько вам лет?");
-        if (userAge % 100 === 11) {
-            alert("Ваш возраст " + userAge + " лет");
-        }
-        else if (userAge % 10 === 1) {
-          alert("Ваш возраст " + userAge + " год");
-        }
-        else if (userAge <= 0) {
-           alert("Неверный возраст");
-        }
-        else if (userAge % 100 >= 5 || userAge % 100 >= 20) {
-            alert("Ваш возраст " + userAge + " лет");
-        }
-        else if (userAge >= 10 && userAge <= 20) {
-            alert("Ваш возраст " + userAge + " лет")
-        }
-        else if (userAge % 10 >= 2 && userAge % 10 <= 4) {
-          alert("Ваш возраст " + userAge + " года");
-        }
+      var userAge = +prompt("Сколько вам лет?");
+    if ((userAge % 10 >= 5) || (userAge % 10 >= 20) || (userAge >= 10 && userAge <= 20) || (userAge % 100 === 11) || (userAge % 100 >= 12 && userAge % 100 <= 14)) {
+        console.log("Ваш возраст " + userAge + " лет");
+    }
+    else if (userAge % 10 === 1) {
+        console.log("Ваш возраст " + userAge + " год");
+    }
+    else if (userAge % 10 >= 2 && userAge % 10 <= 4) {
+        console.log("Ваш возраст " + userAge + " года");
+    }
+    else if (userAge <= 0) {
+        console.log("Неверный возраст");
+    }
+    else {
+        console.log("Ваш возраст " + userAge + " лет");
+    }
        
     </script>
 </body>
